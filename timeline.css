@@ -1,0 +1,276 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.return{
+  padding: 10px;
+  background: #252933;
+  
+}
+
+.return i{
+  font-size: 2em;
+  background-color: midnightblue;
+  padding: 20px;
+  border-radius: 50%;
+  color: ghostwhite;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.concept-skills{
+   display: grid;
+   padding: 40px;
+   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+   grid-auto-flow: dense;
+   grid-auto-rows: 100px;
+   gap: 20px;
+   text-align: center;
+   align-content: center;
+   background-color: #252933;
+}
+
+.concept-item{
+    padding: 10px;
+    grid-column: span 2;
+    background-color: #38BDF8;
+    border-radius: 20px;
+    text-align: center;   
+}
+
+.skill-topic{
+    border-radius: 0px;
+    padding-top: 30px;
+    font-size: 1.8em;
+    background-color: #252933;
+    color: ghostwhite;
+}
+
+
+
+.html i{
+    color: #E34F26;
+}
+
+.css i{
+    color: blue;
+}
+
+.responsive i{
+    color: #252933;
+}
+
+.gith i{
+    color: #F05032;
+}
+
+.UI i{
+    color: #F5D042;
+}
+.concept-item span{
+    font-size: 1.5em;
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+
+.concept-item i{
+    margin: 5px;
+    font-size: 3em;  
+}
+
+
+
+.key-skills{
+  background-color: #252933;
+  display: grid;
+  padding: 20px;
+  gap: 10px;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-auto-rows: 100px;
+}
+
+.key-item{
+    background-color: #FACC15;
+    padding: 30px;
+    border-radius: 20px;
+    grid-column: span 2;
+}
+
+.key-item span{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.key-title{
+    border-radius: 0px;
+    background-color: #252933;
+    font-size: 1.8em;
+    padding: 20px;
+    color: #fff;
+    
+}
+
+.learning{
+  font-family: monospace;
+  background-color: #252933;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 10px;
+  grid-auto-rows: 100px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.learning-item{
+   text-align: center;
+}
+
+.l-title{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.mern{
+    color: #F97316;   
+}
+
+.mern span{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+
+.tailwind{
+    color: #38BDF8;
+}
+
+.tailwind span{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.git{
+    color: #22C55E;
+}
+
+.git span{
+    font-size: 2em;
+}
+
+    section.projects {
+      text-align: center;
+      background: #252933;
+      padding: 2em;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    section.projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: ghostwhite;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 600px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #252933;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: ghostwhite;
+    }
+
+    .project-content p {
+      font-size: 1rem;
+      color: ghostwhite;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .project-content a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      background: #007bff;
+      color: #fff;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .project-content a:hover {
+      background: #0056b3;
+    }
+
+  
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1rem;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 1.2rem;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .prev:hover, .next:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+
+    @media (max-width: 600px){
+      .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    }
+
+
+

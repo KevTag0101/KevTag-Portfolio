@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My work</title>
+    <link rel="stylesheet" href="./timeline.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+  </head>
+  <body>
+      <div class="return">
+        <a href="./index.html" style="text-decoration: none;"><i class="fas fa-arrow-left"></i></a>
+      </div>
+
+    <div class="skills-container">
+      <div class="concept-skills">
+        <div class="concept-item skill-topic"><span>My Skills</span></div>
+        <div class="concept-item html">
+          <i class="fab fa-html5"></i><span>HTML5</span>
+        </div>
+        <div class="concept-item css">
+          <i class="fab fa-css3"></i><span>CSS3</span>
+        </div>
+        <div class="concept-item responsive">
+          <i class="fas fa-mobile-screen-button"></i
+          ><span>Responsive Web Design</span>
+        </div>
+        <div class="concept-item github">
+          <i class="fab fa-github"></i><span>Github</span>
+        </div>
+        <div class="concept-item gith">
+          <i class="fab fa-git"></i><span>Version Control Git</span>
+        </div>
+        <div class="concept-item UI">
+          <i class="fas fa-pencil"></i><span>Basic UI/UX Awareness</span>
+        </div>
+      </div>
+      <div class="key-skills">
+        <div class="key-item key-title">
+          <span style="font-family: monospace; text-align: center"
+            >Key Skills</span
+          >
+        </div>
+        <div class="key-item"><span>Problem Solving</span></div>
+        <div class="key-item"><span>Attention to detail</span></div>
+        <div class="key-item"><span>Creativity in design</span></div>
+        <div class="key-item"><span>Team Collaboration</span></div>
+      </div>
+      <div class="learning">
+        <div class="learning-item l-title">
+          <span>Ongoing Learning:</span>
+        </div>
+        <div class="learning-item mern">
+          <span>MERN Stack (MongoDB, Express.js, React.js, Node.js)</span>
+        </div>
+        <div class="learning-item tailwind">
+          <span>Tailwind CSS(modern styling & responsive design)</span>
+        </div>
+        <div class="learning-item git">
+          <span>Git & Github (version control & collaboration)</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="projects">
+      <h2>My Projects</h2>
+
+      <div class="slider">
+        <div class="slides">
+    
+          <div class="slide">
+            <img src="./images/kevfund.PNG" alt="Project 1" />
+            <div class="project-content">
+              <h3>KevFund(Banking Website)</h3>
+              <p>A beginner-friendly banking site with services overview and account form - built to practice layouts and form handling.Work in progress 🚧.</p>
+              <a href="https://kevtag0101.github.io/KevFund/" target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+
+        
+          <div class="slide">
+            <img src="./images/toyotalq.PNG" alt="Project 2" />
+            <div class="project-content">
+              <h3>Toyota lq Website</h3>
+              <p>A showcase site for the Toyota LQ concept car with sections like Home, History and News designed to practice layouts and responsiveness. Work in Progress⏳.</p>
+              <a href="https://kevtag0101.github.io/Toyota-LQ-Showcase/" target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+
+  
+          <div class="slide">
+            <img src="./images/time.PNG" alt="Project 3" />
+            <div class="project-content">
+              <h3>Weekly Success Timetable</h3>
+              <p>A personal weekly timetable webpage for balancing studies and learning - focused on clean structure and layout.</p>
+              <a href="https://kevtag0101.github.io/my-success-timetable/" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+
+    <script>
+      const slides = document.querySelector(".slides");
+      const slideCount = document.querySelectorAll(".slide").length;
+      let index = 0;
+
+      document.querySelector(".next").addEventListener("click", () => {
+        index = (index + 1) % slideCount;
+        slides.style.transform = `translateX(${-index * 100}%)`;
+      });
+
+      document.querySelector(".prev").addEventListener("click", () => {
+        index = (index - 1 + slideCount) % slideCount;
+        slides.style.transform = `translateX(${-index * 100}%)`;
+      });
+    </script>
+  </body>
+</html>
