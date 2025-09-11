@@ -421,8 +421,7 @@ textarea{
 }
 
 .item2-side-text img{
-    float: right;
-    height: 50px;
+    display: none;
 }
 
 .item2-paragraph p{
