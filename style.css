@@ -407,6 +407,7 @@ textarea{
 }
 
 .item1>div>img{
+    margin-top: 50px;
     width: 270px;
     height: 270px;
     border-radius: 50%;
