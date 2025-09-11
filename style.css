@@ -420,6 +420,11 @@ textarea{
     width: 100%;
 }
 
+.item2-side-text img{
+    float: right;
+    height: 50px;
+}
+
 .item2-paragraph p{
     font-size: 1.5em;
     padding: 15px;
